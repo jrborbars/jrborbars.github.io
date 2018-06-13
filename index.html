@@ -1,809 +1,1175 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <title>Galton Board + Relógio</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <title>Galton Board + Relógio</title>
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/agency.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+  <!-- Custom fonts for this template -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-  </head>
+  <!-- Custom styles for this template -->
+  <link href="css/agency.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 
-  <body id="page-top">
+</head>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Inicio</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Inicio</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Projeto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portifólio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Evolução do projeto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Equipe</a>
-            </li>
-          </ul>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Projeto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Portifólio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">Evolução do projeto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#team">Equipe</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+  </nav>
 
-    <!-- Header -->
-    <header class="masthead">
-      <div class="container">
-        <div class="intro-text">
-          <div class="intro-lead-in">Bem Vindo ao nosso Projeto!</div>
-          <div class="intro-heading">Galton Board e WatchMe</div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Navegue</a>
-        </div>
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">Bem Vindo ao nosso Projeto!</div>
+        <div class="intro-heading">Galton Board e WatchMe</div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Navegue</a>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- Services -->
-    <section id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Projetos</h2>
-            <h3 class="section-subheading text-muted">Conheça nossos projetos.</h3>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-6">
-              <img class="img-fluid" src="img/projeto/relogio_monitor.jpg" alt="">             
-            <h4 class="service-heading">WatchMe - Relógio que mede batimentos cardíacos </h4>
-            <p class="text-muted">Esse projeto se trata de um relógio que mostra no visor a frequência cardíaca de quem o usa. Dessa maneira, é possível ter uma noção melhor do funcionamento do coração, já que o relógio revela a intensidade dos batimentos, se eles estão acelerados ou não. A frequência cardíaca pode dar informações valiosas sobre o corpo humano, principalmente durante exercícios.</p>
-          </div>
-          <div class="col-md-6">
-              <img class="img-fluid" src="img/projeto/galton-board_projeto.jpg" alt="">
-            <h4 class="service-heading">Galton Board</h4>
-            <p class="text-muted">A Galton Board é um dispositivo inventado por Sir Francis Galton para demonstrar o teorema do limite central, em particular, que a distribuição normal é aproximada à distribuição binomial. O tabuleiro consiste de uma placa vertical com fileiras entrelaçadas de pinos. Bolas são jogadas a partir do topo,ao bater nos pinos, elas se distribuem para a esquerda ou para a direita.</p>
-          </div>
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Projetos</h2>
+          <h3 class="section-subheading text-muted">Conheça nossos projetos.</h3>
         </div>
       </div>
-    </section>
-
-    <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Portifólio</h2>
-            <h3 class="section-subheading text-muted">Materiais utilizados e pesquisas realizadas.</h3>
-            <h4 class="section-subheading text-muted">Galton Board</h4>
-            <br>
-          </div>
+      <div class="row text-center">
+        <div class="col-md-6">
+          <img class="img-fluid" src="img/projeto/relogio_monitor.jpg" alt="">
+          <h4 class="service-heading">WatchMe - Relógio que mede batimentos cardíacos </h4>
+          <p class="text-muted">Esse projeto se trata de um relógio que mostra no visor a frequência cardíaca de quem o usa. Dessa maneira, é possível
+            ter uma noção melhor do funcionamento do coração, já que o relógio revela a intensidade dos batimentos, se eles
+            estão acelerados ou não. A frequência cardíaca pode dar informações valiosas sobre o corpo humano, principalmente
+            durante exercícios.</p>
         </div>
-        <div class="row">			
-            <div class="col-md-4 col-sm-6 portfolio-item">
-              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fa fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img class="img-fluid" src="img/portfolio/board2.png" alt="">
-              </a>
-              <div class="portfolio-caption">
-                <h4>Protótipo da Galton</h4>
-                <!-- <p class="text-muted">Illustration</p> -->
+        <div class="col-md-6">
+          <img class="img-fluid" src="img/projeto/galton-board_projeto.jpg" alt="">
+          <h4 class="service-heading">Galton Board</h4>
+          <p class="text-muted">A Galton Board é um dispositivo inventado por Sir Francis Galton para demonstrar o teorema do limite central, em
+            particular, que a distribuição normal é aproximada à distribuição binomial. O tabuleiro consiste de uma placa
+            vertical com fileiras entrelaçadas de pinos. Bolas são jogadas a partir do topo,ao bater nos pinos, elas se distribuem
+            para a esquerda ou para a direita.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="bg-light" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Portifólio</h2>
+          <h3 class="section-subheading text-muted">Materiais utilizados e pesquisas realizadas.</h3>
+          <h4 class="section-subheading text-muted">Galton Board</h4>
+          <br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fa fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img class="img-fluid" src="img/portfolio/galton_01.jpg" alt="">
-              </a>
-              <div class="portfolio-caption">
-                <h4>Board Test</h4>
-                <!-- <p class="text-muted">Graphic Design</p> -->
-              </div>
-            </div>
-			<div class="col-md-4 col-sm-6 portfolio-item">
-              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fa fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img class="img-fluid" src="img/portfolio/video.jpg" alt="" >
-              </a>
-              <div class="portfolio-caption">
-                <h4>Vídeos - teste em aula</h4>
-                <!-- <p class="text-muted">Photography</p> -->
-              </div>
-            </div>
+            <img class="img-fluid" src="img/portfolio/board2.png" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Protótipo da Galton</h4>
+            <!-- <p class="text-muted">Illustration</p> -->
           </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/galton_01.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Board Test</h4>
+            <!-- <p class="text-muted">Graphic Design</p> -->
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/video.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Vídeos - teste em aula</h4>
+            <!-- <p class="text-muted">Photography</p> -->
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/prototipo_galton.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Protótipo em Papelão</h4>
+            <!-- <p class="text-muted">Graphic Design</p> -->
+          </div>
+        </div>
       </div>
-      <div class="container">
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <h4 class="section-subheading text-muted">Relógio</h4>
-              <br>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h4 class="section-subheading text-muted">Relógio</h4>
+          <br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
             </div>
+            <img class="img-fluid" src="img/portfolio/relogio.png" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Modelo de Relógio</h4>
+            <!-- <p class="text-muted">Illustration</p> -->
           </div>
-		  <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/display.jpeg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Teste com o Display</h4>
+            <!-- <p class="text-muted">Graphic Design</p> -->
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/652_1_H.png" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Módulo WiFi - ESP8266</h4>
+            <!-- <p class="text-muted">Identity</p> -->
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal8">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/relogio.png" alt="">
+              <img class="img-fluid" src="img/portfolio/789_1_H.png" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Modelo de Relógio</h4>
-              <!-- <p class="text-muted">Illustration</p> -->
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/display.jpeg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Teste com o Display</h4>
-              <!-- <p class="text-muted">Graphic Design</p> -->
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/652_1_H.png" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Módulo WiFi - ESP8266</h4>
+              <h4>Placa NodeMCU ESP8266</h4>
               <!-- <p class="text-muted">Identity</p> -->
             </div>
-          </div>  
-        </div>
-          
-        </div>
-    </section>
-
-    <!-- About -->
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Evolução do Projeto</h2>
-            <h3 class="section-subheading text-muted">Veja o que foi feito em cada semana do desenvolvimento dos projetos.</h3>
           </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Evolução do Projeto</h2>
+          <h3 class="section-subheading text-muted">Veja o que foi feito em cada semana do desenvolvimento dos projetos.</h3>
         </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="timeline">
-              <li>
-                  <div class="timeline-image">
-                      <h4>Semana 01
-                        <br>07/03/2018</h4>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-image">
+                <h4>Semana 01
+                  <br>07/03/2018</h4>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <img class=" img-fluid" src="img/about/galton_board_relogio.jpg" alt="">
+                  <h4 class="subheading">Como surgiu a Idéia!</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted"><b>Galton Board:</b> Foi proposto em aula o desenvolvimento de uma goldberg machine, que é é uma máquina
+                    que executa uma tarefa simples de uma maneira extremamente complicada, geralmente utilizando uma reação
+                    em cadeia. Com base no tema, escolhemos fazer uma Galton Board.</p>
+                </div>
+              </div>
+              <div class="timeline-inverted">
+                <div class="timeline-panel texto-right">
+                  <p class="text-muted timeline-right"><b>WatchMe:</b> O projeto inicial surgiu através da idéia de se criar um método para controlar os sinais
+                    vitais de pessoas que trabalham em espaços confinados. Como seria necessário mais controles implementados
+                    em um único aparelho para se ter esses dados, se detemos em produzir somente o controle de batimentos
+                    cardíacos.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <h4>Semana 02
+                  <br>14/03/2018</h4>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <img class=" img-fluid" src="img/about/prof_01_texto.png" alt="">
+                  <h4 class="subheading">Pesquisa e Apresentação da idéia</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted"></p>
+                </div>
+              </div>
+              <div class="timeline-inverted">
+                <div class="timeline-panel texto-left">
+                  <p class="text-muted timeline-right"><b>Galton Board:</b> A Galton Board foi projetada em função da máxima área de corte da máquina laser cutter
+                    (60cm x 40cm) e da capacidade de corte da mesma (9mm).</p>
+                  <p class="text-muted timeline-right"><b>WatchMe:</b> O relógio será construído com arduino nano, módulo ESP8266 para acesso a internet, e display
+                    para a visualização dos batimentos.A estrutura do relógio será feito na impressora 3D e a pulseira será
+                    de malha.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <h4>Semana 03
+                  <br>21/03/2018</h4>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <img class=" img-fluid" src="img/about/display.jpeg" alt="">
+                  <h4 class="subheading">Testes com o display para o Relógio</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted"></p>
+                </div>
+              </div>
+              <div class="timeline-inverted">
+                <div class="timeline-panel texto-right">
+                  <p class="text-muted timeline-right">Finalizado a etapa de programação do Arduino para interpretar os sinais vindos do Sensor de Frequência
+                    Cardíaca, e envia-los ao display LCD, testes foram feitos para verificar se a leitura do sensor é idêntica
+                    com sensores de batimentos cardíacos certificados e os testes foram satisfatórios, mostrando que o sistema
+                    criado atendo as especificações.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <h4>Semana 04 <br> 28/03/2018
+                </h4>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="subheading">Compra do Módulo WiFi - ESP8266 </h4>
+                  <img class=" img-fluid" src="img/about/quad_vivi_03.png" alt="">
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted"></p>
+                </div>
+              </div>
+              <div class="timeline-inverted">
+                <div class="timeline-panel texto-left">
+                  <p class="text-muted timeline-right">O módulo WiFi ESP8266 é um SOC com protocolo TCP/IP integrado que consegue dar a qualquer microcontrolador
+                    acesso a sua rede WiFi. O ESP8266 é capaz tanto de hospedar uma aplicação quanto descarregar todas as
+                    funções de redes WiFi a partir de outro processador de aplicação. Cada módulo ESP8266 vai pré-programado
+                    com um comando AT setando seu firmware, significando que você pode simplesmente ligar este módulo ao
+                    seu Arduino e ele vai funcionar como qualquer outro shield WiFi funcionaria. Este módulo tem um ótimo
+                    custo x benefício e possui uma comunidade de usuários enorme, e continuamente em crescimento.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <h4>Semana 05
+                  <br>04/04/2018</h4>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="subheading">Desenvolvimento da Galton Board</h4>
+                  <img class=" img-fluid" src="img/about/Foto01.jpeg" alt="">
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted"></p>
+                </div>
+              </div>
+              <div class="timeline-inverted">
+                <div class="timeline-panel texto-right">
+                  <p class="text-muted timeline-right">Para a Galton Board de teste foi utilizada uma chapa de 6mm de MDF com furos de 8mm para as cavilhas de
+                    30mm x 8mm adquiridas no comércio local. Os furos foram espaçados em 12mm para a passagem das esferas.
+                    Para as barreiras laterais, barreiras das baias e das rampas para as esferas foi utilizado MDF 3mm. Após
+                    a montagem foram realizados testes utilizando esferas de 4 diâmetros diferentes.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <h4>Semana 06
+                  <br>11/04/2018</h4>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="subheading">Apresentação do Projeto Galton Board </h4>
+                  <img class=" img-fluid" src="img/about/Foto05.jpeg" alt="">
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Equipe: José, Carol, Patrick, Viviani e Bruno.</p>
+                </div>
+              </div>
+              <div class="timeline-inverted">
+                <div class="timeline-panel texto-left">
+                  <p class="text-muted timeline-right">
+                    <b>Conclusão dos testes</b> Os testes realizados demonstram que tanto o diâmetro das esferas quanto a
+                    quantidade das mesmas levam a resultados mais (ou menos) ilustrativos de uma curva normal de distribuição.
+                    Enquanto esferas grandes em pequenas quantidades levam a uma dispersão maior em ralação ao centro, esferas
+                    pequenas em grandes quantidades levam a uma concentração maior na região central, aproximando a figura
+                    formada de uma distribuição normal.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <h4>Semana 07
+                  <br>18/04/2018</h4>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="subheading">Estruturação dos próximos passos com Arduino</h4>
+                  <img class=" img-fluid" src="img/about/Foto02.jpeg" alt="">
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted"></p>
+                </div>
+              </div>
+              <div class="timeline-inverted">
+                <div class="timeline-panel texto-right">
+                  <p class="text-muted timeline-right">Uma das primeiras idéias de automação foi a de recolher as esferas na parte inferior da GB e levar, através
+                    de um container ligado a uma correia e um motor, até o topo da GB, para decarregar as esferas e reiniciar
+                    o processo.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <h4>Semana 08
+                  <br>25/04/2018</h4>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="subheading">Criação do blog do projeto</h4>
+                  <img class=" img-fluid" src="img/about/Foto04.jpeg" alt="">
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Usamos o Bootstrap template e cartoonize para o desenvolvimento do site.</p>
+                </div>
+              </div>
+              <div class="timeline-inverted">
+
+                <div class="timeline-panel texto-left">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">Enquanto isso ...</h4>
+                    <img class=" img-fluid" src="img/about/Foto03.jpeg" alt="">
+                  </div>
+                  <p class="text-muted timeline-right"></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <h4>Semana 09
+                  <br>02/05/2018</h4>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="subheading">Sistema</h4>
+                  <img class=" img-fluid" src="img/about/foto15.jpeg" alt="">
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">O primeiro passo foi instalar as bibliotecas Adafruit_GFX.h e Adafruit_SSD1306.h (Elas permitem que você
+                    trabalhe tanto com texto como com gráficos). Usando o sistema batimento.uno, ele foi carregado e verificado
+                    e se obteve sucesso. </p>
+                </div>
+              </div>
+              <div class="timeline-inverted">
+                <div class="timeline-panel texto-right">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">1º Teste com a placa ESP8622</h4>
+                    <img class=" img-fluid" src="img/about/Foto11.jpeg" alt="">
+                  </div>
+                  <p class="text-muted timeline-right">Com a placa funcionando, chegou a hora de implementar o código para passar os dados para a ESP. 
+                    O circuito estava certo, porém não conseguimos a saída dos dados pela placa.Neste dia o erro permaneceu.
+                    <img class=" img-fluid" src="img/about/a01-espcomm_open-failed.png" alt="">
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <h4>Semana 10
+                  <br>09/05/2018</h4>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="subheading">Como fazer?</h4>
+                  <img class=" img-fluid" src="img/about/Foto12.jpeg" alt="">
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Para automação da Galton Board utilizamos um arduino para contar as esferas que entram em cada baia. Como
+                    o arduino possui um número limitado de portas, utilizamos o mesmo ligado a dois shift register 74HCT165,
+                    o que aumenta o número de portas disponíveis para a contagem (possuimos 16 baias e o arduino UNO possui
+                    14 portas). </p>
+                </div>
+              </div>
+              <div class="timeline-inverted">
+                <div class="timeline-panel texto-left">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">Mudança de Planos</h4>
+                    <img class=" img-fluid" src="img/about/foto16.jpeg" alt="">
+                  </div>
+                  <p class="text-muted timeline-right">Devido à pouca experiência com o projeto de partes móveis, o que se mostrou correto, decidimos fazer o
+                    recarregamento das esferas da GB de forma mais simples. A forma escolhida foi o tombamento da mesma,
+                    de forma que as esferas possam retornar para o topo e serem novamente utilizadas para o experimento.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <h4>Semana 11
+                  <br>16/05/2018</h4>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="subheading">Plano de corte da GB</h4>
+                  <img class=" img-fluid" src="img/about/Foto09.jpeg" alt="">
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted"></p>
+                </div>
+              </div>
+              <div class="timeline-inverted">
+                <div class="timeline-panel texto-right">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">Retirada de sensores para a Galton</h4>
+                    <img class=" img-fluid" src="img/about/Foto10.jpeg" alt="">
+                  </div>
+                  <p class="text-muted timeline-right">Os sensores utilizados no arduino para a contagem das esferas foram retirados de antigos mice de esferas.
+                    São sensores óticos infravermelhos das esferas de rolagem. Os emissores possuem um par de “pernas”, enquanto
+                    os receptores possuem três “pernas”. A “perna” extra é utilizada para indicar o sentido do movimento
+                    do mouse, sendo desnecessária para o nosso objetivo. Assim, foram dessoldados dos mice que emprestamos
+                    do Prof. Alex Gonzales e do Prof. André Peres.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <h4>Semana 12
+                  <br>23/05/2018</h4>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="subheading">Protótipo em papelão</h4>
+                  <img class=" img-fluid" src="img/about/Foto08.jpeg" alt="">
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">O primeiro protótipo em papelão ficou muito bom nas dimensões do plano, mas detectamos um erro no projeto
+                    das paredes, que estavam com 80mm de altura, quando o correto seriam 30mm. O segundo protótipo ficou
+                    adequado em todas as dimensões, sendo aprovado para o projeto final.</p>
+                </div>
+              </div>
+              <div class="timeline-inverted">
+                <div class="timeline-panel texto-left">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">Cortando o Protótipo</h4>
+                    <img class=" img-fluid" src="img/about/Foto07.jpeg" alt="">
+                  </div>
+                  <p class="text-muted timeline-right">O projeto original possuia alguns problemas dimensionais, pois precisou ser encaixado nas dimensões da
+                    laser cutter. Para o projeto final, fizemos dois protótipos em papelão para assegurar que possuiam as
+                    dimensões corretas e os encaixes adequados. </p>
+                </div>
+              </div>
+            </li>
+            <li>
+                <div class="timeline-image">
+                  <h4>Semana 13
+                    <br>30/05/2018</h4>
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">Verificando ligações do ESP8622</h4>
+                    <img class=" img-fluid" src="img/about/0385.image_714FA209.png" alt="">
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">A segunda tentativa com o módulo ESP8622 foi começar do zero as ligações.
+                      A montagem foi feita conforme o esquema acima.
+                    </p>
+                  </div>
+                </div>
+                <div class="timeline-inverted">
+                  <div class="timeline-panel texto-right">
+                    <div class="timeline-heading">
+                      <h4 class="subheading">2º Teste com a placa ESP8622</h4>
+                      <img class=" img-fluid" src="img/about/erro_wifi_01.png" alt="">
                     </div>
-                <div class="timeline-panel">				
-                  <div class="timeline-heading">				  
-                    <img class=" img-fluid" src="img/about/galton_board_relogio.jpg" alt="">
-                    <h4 class="subheading">Como surgiu a Idéia!</h4>
+                    <p class="text-muted timeline-right">Neste caso, o Serial reconheceu o baund de 9.660 porém o esp, que conectava as entradas RX e TX, não.
+                      Sem sucesso.
+                    </p>
                   </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Foi proposto em aula o desenvolvimento de uma goldberg machine, que é </p>
-                  </div>
-                </div>  
-				<div class="timeline-inverted">
-					<div class="timeline-panel texto-right">
-						<p class="text-muted timeline-right">O projeto inicial do WatchMe surgiu através da idéia de se criar um método para controlar os sinais vitais de pessoas que trabalham em espaços confinados. Como seria necessário mais controles implementados 
-						em um único aparelho para se ter esses dados, se detemos em produzir somente o controle de batimentos cardíacos.</p>
-					</div>                    
-                </div>			
-              </li>              
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                    <h4>Semana 02
-                      <br>14/03/2018</h4>
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">   
-                    <img class=" img-fluid" src="img/about/prof_01_texto.png" alt="">                
-                    <h4 class="subheading">Pesquisa e Apresentação da idéia</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-				<div class="timeline-inverted">
-					<div class="timeline-panel texto-left">
-						<p class="text-muted timeline-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-					</div>                    
                 </div>
               </li>
               <li>
                 <div class="timeline-image">
-                    <h4>Semana 03 
-                      <br>21/03/2018</h4>
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading"> 
-                    <img class=" img-fluid" src="img/about/display.jpeg" alt="">                     
-                    <h4 class="subheading">Testes com o display para o Relógio</h4>
-                  </div>
-                  <div class="timeline-body">          
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-				<div class="timeline-inverted">
-					<div class="timeline-panel texto-right">
-						<p class="text-muted timeline-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-					</div>                    
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                    <h4>Semana 04 <br>
-                      28/03/2018</h4>
+                  <h4>Semana 14
+                    <br>06/06/2018
+                  <br>Relógio e</h4>
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4 class="subheading">Compra do Módulo WiFi - ESP8266 </h4>
-                    <img class=" img-fluid" src="img/about/quad_vivi_03.png" alt="">              
+                    <h4 class="subheading">Mudança de Planos</h4>
+                    <img class=" img-fluid" src="img/about/foto17.jpeg" alt="">
+                    <img class=" img-fluid" src="img/about/foto20.jpeg" alt="">
+                    <img class=" img-fluid" src="img/about/foto19.jpeg" alt="">
                   </div>
-                 <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  <div class="timeline-body">
+                    <p class="text-muted">Como não funcionava com a módulo wifi ESP8622, resolvemos trocar o sistema do projeto para a placa NodeMCU.
+                      Essa placa já possui todo o necessário para receber uma programação, seja via comandos AT, seja via programação LUA, seja via IDE do Arduino. 
+                      Esta placa poderá substituir facilmente uma placa Arduino com interface de conexão com a internet, porém sempre levando em consideração suas limitações, como número de portas e tensão lógica de 3,3V.
+                    </p>
                   </div>
                 </div>
-				<div class="timeline-inverted">
-					<div class="timeline-panel texto-left">
-						<p class="text-muted timeline-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-					</div>                    
+                <div class="timeline-inverted">
+                  <div class="timeline-panel texto-right">
+                    <div class="timeline-heading">
+                      <h4 class="subheading">Teste com a placa NodeMCU ESP8266</h4>
+                      <img class=" img-fluid" src="img/about/IMG_20180606_112755179.jpg" alt="">
+                    </div>
+                    <p class="text-muted timeline-right">Com a retira do arduino Nano e o Wifi ESP8622, o novo sistema foi montado.
+                      Agora temos somente o display, o sensor de frequência e o NodeMCU.
+                      Consultamos a página <a href="https://www.survivingwithandroid.com/2018/04/how-to-build-an-iot-system-using-arduino-esp8266-mydevices-cayenne-and-mqtt.html" target="blank">Site nodeMCU com Mqtt</a>,
+                      implementamos o código com o do batimento que já tinhamos, e foi Sucesso.
+                      <br><br><img class=" img-fluid" src="img/about/sucesso_wifi.png" alt="">
+                      <br><br><img class=" img-fluid" src="img/about/foto18.jpeg" alt="">
+                    </p>
+                  </div>
                 </div>
               </li>
               <li>
                 <div class="timeline-image">
-                    <h4>Semana 05 
-                      <br>04/04/2018</h4>                  
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">                    
-                    <h4 class="subheading">Desenvolvimento da Galton Board</h4>
-                    <img class=" img-fluid" src="img/about/Foto01.jpeg" alt="">
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-				<div class="timeline-inverted">
-					<div class="timeline-panel texto-right">
-						<p class="text-muted timeline-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-					</div>                    
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                    <h4>Semana 06 
-                      <br>11/04/2018</h4>                  
+                  <h4><br>Galton Board</h4>
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4 class="subheading">Apresentação do Projeto Galton Board </h4>
-                    <img class=" img-fluid" src="img/about/Foto05.jpeg" alt="">              
-                  </div>
-                 <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-				<div class="timeline-inverted">
-					<div class="timeline-panel texto-left">
-						<p class="text-muted timeline-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-					</div>                    
-                </div>
-              </li>
-              <li>
-                <div class="timeline-image">
-                    <h4>Semana 07
-                      <br>18/04/2018</h4>                  
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">                    
-                    <h4 class="subheading">Estruturação dos próximos passos com Arduino</h4>                   
-                    <img class=" img-fluid" src="img/about/Foto02.jpeg" alt=""> 
+                    <h4 class="subheading">Preparação dos circuitos</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    <p class="text-muted">Nesta aula (06/06/18) continuamos trabalhando em cima do projeto, realizando
+                      alguns testes de medida com a superfície da nossa Galton, em que, finalmente,
+                      conseguimos acertar as medidas do nosso protótipo, depois de inúmeras tentativas. Após
+                      isso, começamos a preparar o material para produção dos circuitos. Como forma inicial, eu
+                      e a Carol, separamos os fios e soldamos todo os infravermelhos que deverão anexados na
+                      placa.</p>
                   </div>
                 </div>
-				<div class="timeline-inverted">
-					<div class="timeline-panel texto-right">
-						<p class="text-muted timeline-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-					</div>                    
+                <div class="timeline-inverted">
+                  <div class="timeline-panel texto-right">
+                    <div class="timeline-heading">
+                      <h4 class="subheading">Resultado</h4>
+                      <img class=" img-fluid" src="img/about/IMG_20180606_110145008.jpg" alt="">
+                    </div>
+                    <p class="text-muted timeline-right">O nosso projeto está começando a ganhar forma e aos poucos estamos
+                      conseguindo o objetivo final da disciplina.                      
+                    </p>
+                  </div>
                 </div>
               </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                    <h4>Semana 08
-                      <br>25/04/2018</h4>                  
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">                    
-                    <h4 class="subheading">Criação do blog do projeto</h4>
-                    <img class=" img-fluid" src="img/about/Foto04.jpeg" alt="">  
-                    <img class=" img-fluid" src="img/about/Foto03.jpeg" alt="">    
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-				<div class="timeline-inverted">
-					<div class="timeline-panel texto-left">
-						<p class="text-muted timeline-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-					</div>                    
-                </div>
-              </li>
-			   <li>
-                <div class="timeline-image">
-                    <h4>Semana 09
-                      <br>02/05/2018</h4>                  
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">                    
-                    <h4 class="subheading">Estruturação dos próximos passos com Arduino</h4>                   
-                    <img class=" img-fluid" src="img/about/Foto02.jpeg" alt=""> 
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-				<div class="timeline-inverted">
-					<div class="timeline-panel texto-right">
-						<p class="text-muted timeline-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-					</div>                    
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                    <h4>Semana 10 
-                      <br>09/05/2018</h4>                  
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">                    
-                    <h4 class="subheading">Criação do blog do projeto</h4>
-                    <img class=" img-fluid" src="img/about/Foto04.jpeg" alt="">  
-                    <img class=" img-fluid" src="img/about/Foto03.jpeg" alt="">    
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-				<div class="timeline-inverted">
-					<div class="timeline-panel texto-left">
-						<p class="text-muted timeline-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-					</div>                    
-                </div>
-              </li>
-			   <li>
-                <div class="timeline-image">
-                    <h4>Semana 11
-                      <br>16/05/2018</h4>                  
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">                    
-                    <h4 class="subheading">Estruturação dos próximos passos com Arduino</h4>                   
-                    <img class=" img-fluid" src="img/about/Foto02.jpeg" alt=""> 
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-				<div class="timeline-inverted">
-					<div class="timeline-panel texto-right">
-						<p class="text-muted timeline-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-					</div>                    
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                    <h4>Semana 12 
-                      <br>23/05/2018</h4>                  
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">                    
-                    <h4 class="subheading">Criação do blog do projeto</h4>
-                    <img class=" img-fluid" src="img/about/Foto04.jpeg" alt="">  
-                    <img class=" img-fluid" src="img/about/Foto03.jpeg" alt="">    
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-				<div class="timeline-inverted">
-					<div class="timeline-panel texto-left">
-						<p class="text-muted timeline-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-					</div>                    
-                </div>
-              </li>
-              <li>
-                <div class="timeline-image">
-                  <h4><i>Próximas
+            <li>
+              <div class="timeline-image">
+                <h4><i>Próximas
                     <br>Cenas
                     <br>...</i></h4>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <img class=" img-fluid" src="img/about/prof_02_texto.png" alt="">
                 </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                      <img class=" img-fluid" src="img/about/prof_02_texto.png" alt="">              
-                    </div>
-                   <!--<div class="timeline-body">
+                <!--<div class="timeline-body">
                       <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
                     </div>-->
-                  </div>
-              </li>
-            </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="bg-light" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Nossa Equipe</h2>
+          <h3 class="section-subheading text-muted"></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team/2.png" alt="">
+            <h4>Bruno Trevissoi </h4>
+            <p class="text-muted">Desenvolvedor Full-Stack</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
+            <h4>Carol Vieira</h4>
+            <p class="text-muted">Desenvolvedora Front-End</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team/josé.jpg" alt="">
+            <h4>José Borba</h4>
+            <p class="text-muted">Desenvolvedor Full-Stack</p>
+          </div>
+        </div>
+        <div class="col-sm-7">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team/patrick.png" alt="">
+            <h4>Patrick Garcia</h4>
+            <p class="text-muted">Desenvolvedor Full-Stack</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
+            <h4>Viviani Andrade</h4>
+            <p class="text-muted">Desenvolvedora Back-End</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Team -->
-    <section class="bg-light" id="team">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Nossa Equipe</h2>
-            <h3 class="section-subheading text-muted"></h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/2.png" alt="">
-              <h4>Bruno Trevissoi </h4>
-              <p class="text-muted">Desenvolvedor Full-Stack</p>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-              <h4>Carol Vieira</h4>
-              <p class="text-muted">Desenvolvedora Front-End</p>
-            </div>
-          </div>
-		  <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/josé.jpg" alt="">
-              <h4>José Borba</h4>
-              <p class="text-muted">Desenvolvedor Full-Stack</p>
-            </div>
-          </div>
-		  <div class="col-sm-7">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/patrick.png" alt="">
-              <h4>Patrick Garcia</h4>
-              <p class="text-muted">Desenvolvedor Full-Stack</p>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
-              <h4>Viviani Andrade</h4>
-              <p class="text-muted">Desenvolvedora Back-End</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Clients -->
-    <section class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
+  <!-- Clients -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
               <img class="img-fluid d-block mx-auto img-cinza" src="img/logos/poalab.png" alt="">
             </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
               <img class="img-fluid d-block mx-auto img-cinza" src="img/logos/ifrs.png" alt="">
             </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">               
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#">               
               <img class="img-fluid d-block mx-auto img-cinza" src="img/logos/bootstrap.png" alt="">
             </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
               <img class="img-fluid d-block mx-auto img-cinza" src="img/logos/cartoonize.png" alt="">
             </a>
-          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
 
-    <!-- Portfolio Modals -->
+  <!-- Portfolio Modals -->
 
-    <!-- Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
+  <!-- Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="text-uppercase">Protótipo da Galton</h2>
+              <p class="item-intro text-muted">Desenhos do Tabuleiro</p>
             </div>
           </div>
-          <div class="container">
-		  
-		  <div class="row">
-          <div class="col-lg-12 text-center">
-             <h2 class="text-uppercase">Protótipo da Galton</h2>
-             <p class="item-intro text-muted">Desenhos do Tabuleiro</p>
+          <div class="row">
+            <div class="col-sm-4 mx-auto">
+              <img class="img-fluid " src="img/portfolio/board.png" alt="">
+              <p><b>a) Visualização do layout geral da GB:</b> As esferas caem pela abertura entre os dois trapézios de cor
+                cinza, mais acima. O pino de cor vermelha é o pino do primeiro choque, como orientado pela bibliografia.
+                Os pinos vermelhos entre 1-2 e 14-15 são os pinos nos quais se dá a sequencia de choques mais a direita ou
+                mais a esquerda, sendo o limite teórico dos choques. </p>
+            </div>
+            <div class="col-sm-4 mx-auto">
+              <img class="img-fluid " src="img/portfolio/galton2.svg" alt="">
+              <p><br><b>b) Detalhe das baias:</b> Detalhe das baias onde as esferas são capturadas, onde pode ser visto o encaixe
+                das barreiras e um furo logo abaixo, através do qual os sensores de contagem das esferas são posicionados.</p>
+            </div>
+            <div class="col-sm-4 mx-auto">
+              <img class="img-fluid " src="img/portfolio/novaGalton.jpg" alt="">
+              <p><b>c) Plano de corte da GB:</b> Nesta figura pode ser visto o planejamento dos cortes para a montagem da GB,
+                fora de escala. O plano está disponível para download em PDF [aqui].</p>
+            </div>
           </div>
-        </div>
-        <div class="row">     
-		  <div class="col-sm-4 mx-auto">		  
-		    <img class="img-fluid " src="img/portfolio/board.png" alt="">
-				 <p>Primeiro protótipo da Galton. Nele consta </p>
-				  <ul class="list-inline">
-					<li>Date: January 2017</li>
-					<li>Client: Threads</li>
-					<li>Category: Illustration</li>
-				  </ul>
-          </div>
-          <div class="col-sm-4 mx-auto">
-		    <img class="img-fluid " src="img/portfolio/galton2.svg" alt="">
-				 <p><br>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-				  <ul class="list-inline">
-					<li>Date: January 2017</li>
-					<li>Client: Threads</li>
-					<li>Category: Illustration</li>
-				  </ul>
-          </div>
-		  <div class="col-sm-4 mx-auto">
-		    <img class="img-fluid " src="img/portfolio/novaGalton.jpg" alt="">
-				 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-				  <ul class="list-inline">
-					<li>Data:  16/06/2018</li>					
-					<li>Categoria: Galton</li>
-				  </ul>
-          </div>
-        </div>
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <ul class="list-inline">
+                <li>Data: 16/05/2018</li>
+                <li>Categoria: Galton</li>
+              </ul>
+              <div class="modal-body">
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
                     Fechar</button>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
+  <!-- Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="text-uppercase">Board Test</h2>
+              <p class="item-intro text-muted">Desempenho da Board</p>
             </div>
           </div>
-          <div class="container">
-		  
-		  <div class="row">
-          <div class="col-lg-12 text-center">
-             <h2 class="text-uppercase">Board Test</h2>
-             <p class="item-intro text-muted">Desempenho da Board</p>
+          <div class="row">
+            <div class="col-sm-3 mx-auto">
+              <img class="img-fluid " src="img/portfolio/photo_2018-04-11_14-58-03.jpg" alt="">
+              <p><b>a)Teste com as esferas de diametro 10mm (maiores):</b> Como a quantidade de esferas maiores não é grande
+                (33 10mm esferas), o experimento não demonstrou uma curva muito acentuada. Mas é possível acompanhar, à esquerda
+                e à direita, a diminuição do número de esferas, com uma maior concentração na região central. Além disso,
+                o diâmetro das esferas proporciona, teoricamente, um maior número de choques, pois os espaços entre os pinos
+                é proporcionalmente menor para a sua passagem.</p>
+            </div>
+            <div class="col-sm-3 mx-auto">
+              <img class="img-fluid " src="img/portfolio/photo_2018-04-11_14-58-06.jpg" alt="">
+              <p><b>b)Teste com as esferas de diametro 8mm:</b> A quantidade um pouco maior de esferas deste diâmetro (78 8mm esferas)
+                não melhorou a curva, que não ficou muito acentuada. Neste teste também foi possível acompanhar a diminuição
+                do número de esferas na região mais afastada do centro.</p>
+            </div>
+            <div class="col-sm-3 mx-auto">
+              <img class="img-fluid " src="img/portfolio/photo_2018-04-11_14-58-10.jpg" alt="">
+              <p><b>c)Teste com as esferas de diametro 6mm:</b>A quantidade de esferas neste experimento (186 6mm esferas) pareceu
+                indicar que, quanto maior o número de esferas, mais aproximada a distribuição fica da curva normal. Isto
+                é condizente com as fontes pesquisadas, pois quando o número de esferas tende ao infinito a curva tende a
+                uma curva normal. A concentração na região central é visualmente maior do que nas regiões laterais, diminuindo
+                gradativamente nestas últimas direções.</p>
+            </div>
+            <div class="col-sm-3 mx-auto">
+              <img class="img-fluid " src="img/portfolio/photo_2018-04-11_14-58-13.jpg" alt="">
+              <p><b>d)Teste com as esferas de diametro 3mm (menores):</b>A quantidade de esferas neste experimento (~663 4mm esferas)
+                e o diâmetro das mesmas pareceram bastante adequados para a demonstração da distribuição. O resultado foi
+                uma figura bem semelhante a uma distribuição normal, com uma concentração maior ao centro e que, gradativamente,
+                diminui para as laterais. Este diâmetro de esferas proporciona, teoricamente, um número menor de choques,
+                pois o espaço entre os pinos para a passagem das esferas é proporcionalmente maior do que das demais esferas,
+                contribuindo para o aumento da concentração na região central.</p>
+            </div>
           </div>
-        </div>
-        <div class="row">     
-		  <div class="col-sm-3 mx-auto">		  
-		    <img class="img-fluid " src="img/portfolio/photo_2018-04-11_14-58-03.jpg" alt="">
-				 <p>Primeiro teste: Bolas com diâmetro ..... Neste teste detectamos que ...</p>		
-          </div>
-          <div class="col-sm-3 mx-auto">
-		    <img class="img-fluid " src="img/portfolio/photo_2018-04-11_14-58-06.jpg" alt="">
-				 <p>Segundo teste: Bolas com diâmetro .....Neste teste detectamos que ...</p>			
-          </div>
-		  <div class="col-sm-3 mx-auto">
-		    <img class="img-fluid " src="img/portfolio/photo_2018-04-11_14-58-10.jpg" alt="">
-				  <p>Terceiro teste: Bolas com diâmetro .....Neste teste detectamos que ...</p>	
-          </div>
-		  <div class="col-sm-3 mx-auto">
-		    <img class="img-fluid " src="img/portfolio/photo_2018-04-11_14-58-13.jpg" alt="">
-				  <p>Quarto teste: Bolas com diâmetro .....Neste teste detectamos que ...</p>		
-          </div>
-        </div>
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-			  <ul class="list-inline">
-					<li>Data:  11/04/2018</li>					
-					<li>Categoria: Galton</li>
-				  </ul>
-                <div class="modal-body">
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <ul class="list-inline">
+                <li>Data: 11/04/2018</li>
+                <li>Categoria: Galton</li>
+              </ul>
+              <div class="modal-body">
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
                     Fechar</button>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
+  <!-- Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
           </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
+        </div>
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center">
                   <h2 class="text-uppercase">Módulo WiFi - ESP8266</h2>
-                  <p class="item-intro text-muted"></p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                  <p>em implementação</p>
+                  <p class="item-intro text-muted"><br><br></p>
+                </div>
+          </div>
+
+          <div class="row">
+              <div class="col-sm-4 mx-auto">
+                  <img class="img-fluid " src="img/portfolio/IMG_20180511_154714133_HDR.jpg" alt="">
+                  <p><b>1° Teste envolvendo transmissão de dados para o módulo Wifi.</b></p>
+                <p>Conexão do Módulo Wifi com o display e o arduino Nano.</p>
                   <ul class="list-inline">
-                    <li>Data: 31/05/2018</li>                    
-                    <li>Categoria: Relógio</li>
+                      <li>Data: 18/05/2018</li>
                   </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+              </div>
+              <div class="col-sm-4 mx-auto">
+                <img class="img-fluid " src="img/about/a01-espcomm_open-failed.png" alt="">
+                <p>Erro quando o teste foi feito passando os comandos AT para o console.
+                  A porta COM3 não respondia tbm.
+                </p>
+                <ul class="list-inline">
+                    <li>Data: 18/05/2018</li>
+                  </ul>
+              </div>  
+              <div class="col-sm-4 mx-auto">
+                  <img class="img-fluid " src="img/about/erro_wifi_01.png" alt="">
+                  <b>2° Teste: Testando só o módulo</b>
+                  <p>Foi verificada as ligações do módulo e uma nova tentativa foi feita, agora trocando as portas no arduino nano para RX e TX, 3 e 2 respectivamente.
+                    Mas a falha permaneceu.</p>                  
+                  <ul class="list-inline">
+                      <li>Data: 01 e 02/06/2018</li>
+                    </ul>
+                </div>           
+            </div>
+            <div class="col-lg-12 mx-auto">
+              <div class="modal-body"> 
+                <ul class="list-inline">
+                  <li>Categoria: Relógio</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
                     Fechar</button>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
+  <!-- Modal 4 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="text-uppercase">Modelo de Relógio</h2>
+              <p class="item-intro text-muted"><br><br></p>
             </div>
           </div>
-          <div class="container">
-		  
-		  <div class="row">
-          <div class="col-lg-12 text-center">
-             <h2 class="text-uppercase">Modelo de Relógio</h2>
-             <p class="item-intro text-muted"><br><br></p>
+          <div class="row">
+            <div class="col-sm-4 mx-auto">
+              <img src="img/projeto/relogio_monitor.jpg" alt="" height="40%">
+              <p>A idéia do nosso projeto é que com o arduino nano, um módulo wifi ESP8266,sensor de frequência e um display,
+                possamos montar um relógio para monitorar os batimentos cardíacos e também disponibilizar estes dados através
+                de um aplicativo.</p>
+            </div>
+            <div class="col-sm-4 mx-auto">
+              <img class="img-fluid " src="img/portfolio/relogio_site.png" alt="">
+              <p>Site de conversão para o modelo 3D do Relógio</p>
+              <a href="https://www.astroprint.com/" target="blank">https://www.astroprint.com/</a>
+            </div>
+            <div class="col-sm-4 mx-auto">
+              <img class="img-fluid " src="img/portfolio/site_impressao.png" alt="">
+              <p>Site com o código para a impressão do modelo</p>
+              <a href="https://www.thingiverse.com/" target="blank">https://www.thingiverse.com/</a>
+            </div>
           </div>
-        </div>
-        <div class="row">     
-		  <div class="col-sm-4 mx-auto">		  
-		    <img src="img/projeto/relogio_monitor.jpg" alt="" height="40%">
-				 <p>A idéia do nosso projeto é que com o arduino nano, um módulo wifi ESP8266,sensor de frequência e um display, possamos montar um relógio para
-				 monitorar os batimentos cardíacos e também disponibilizar estes dados através de um aplicativo.</p>				  
-          </div>
-          <div class="col-sm-4 mx-auto">
-		    <img class="img-fluid " src="img/portfolio/relogio_site.png" alt="">
-				 <p>Site de conversão para o modelo 3D do Relógio</p>	
-			<a href="https://www.astroprint.com/" target="blank">https://www.astroprint.com/</a>			 
-          </div>
-		  <div class="col-sm-4 mx-auto">
-		    <img class="img-fluid " src="img/portfolio/site_impressao.png" alt="">
-				 <p>Site com o código para a impressão do modelo</p>		
-				<a href="https://www.thingiverse.com/" target="blank">https://www.thingiverse.com/</a>					 
-          </div>
-        </div>
-            <div class="row">			
-              <div class="col-lg-8 mx-auto">
-			  <ul class="list-inline">
-					<li>Data:  25/04/2018</li>					
-					<li>Categoria: Relógio</li>
-				  </ul>
-                <div class="modal-body">
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <ul class="list-inline">
+                <li>Data: 25/04/2018</li>
+                <li>Categoria: Relógio</li>
+              </ul>
+              <div class="modal-body">
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
                     Fechar</button>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
+  <!-- Modal 5 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="text-uppercase">Display</h2>
+              <p class="item-intro text-muted">Teste com display</p>
+              <div class="row">
+              <div class="col-sm-6 mx-auto">
+                <img class="img-fluid " src="img/portfolio/display.jpeg" alt="">
+                <p>Dados do arduino Nano para o Display</p>
+              </div>
+              <div class="col-sm-6 mx-auto">
+                  <img class="img-fluid " src="img/portfolio/grafico_01.png" alt="" style="height:300px">
+                  <p>Gráfico com os batimentos cardíacos na plotter serial</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="col-sm-4 mx-auto">
+              <img class="img-fluid " src="img/portfolio/codigo_uno_01.png" alt="">
+              <p>Adafruit_GFX.h, Adafruit_SPITFT.h e Adafruit_SSD1306.h = permitem que você trabalhe tanto com texto como com
+                gráficos.
+                <br> Oled_Address 0X3C = tipo de display
+                <br><b>Variáveis:</b>
+                <br>x: variável para contar o tamanho da tela
+                <br>lastx: posição do x na tela de gráfico
+                <br>lasty: posição do y na tela de gráfico
+                <br>LastTime: última vez
+                <br>BMPTiming: cronometragem da BPM
+                <br>BeatComplete: Batida Completa
+                <br>BMP: variável que imprime o valor dos batimentos por mininuto.
+                <br>UpperThreshold: Limite superior
+                <br>LowerThreshold: Limite inferior
+              </p>
+            </div>
+            <div class="col-sm-4 mx-auto">
+              <img class="img-fluid " src="img/portfolio/codigo_uno_02.png" alt="">
+              <p>No void setup, o código é para limpar o monitor e definir o tamanho do texto;</p>
+              <img class="img-fluid " src="img/portfolio/codigo_uno_03.png" alt="">
+              <p>Void Loop: O x verifica se é maior que 127, vendo se o gráfico foi além do fim da tela, se sim redefinimos de volta para
+                o ínico da tela.
+                <br>
+                <b>Imprimindo o Gráfico:</b>
+                <br>A variável <b>value</b> recebe o valor do pino de entrada 0, que é o início do batimento cardíaco. Y é o calculo
+                da batida. O value é dividido por 16 para centralizar o gráfico no display. Oled.writeLine escreve o gráfico na tela.
+              </p>
+            </div>
+            <div class="col-sm-4 mx-auto">
+              <img class="img-fluid " src="img/portfolio/codigo_uno_04.png" alt="">
+              <p>
+                <b>Imprimindo o Batimento no Display</b>
+                <br>
+                Quando o inicio do batimento cardíaco passa um certo limiar superior e a pulsação está completa e também se foi um limiar
+                mais baixo estamos realmente no tempo que o coração bate por minuto, daí calculamos o batimento e exibimos
+                na tela.
+              </p>
+              <img class="img-fluid " src="img/portfolio/codigo_uno_05.png" alt="">
+              <p>
+                <b>Imprimindo o Batimento na Plotter</b>
+                <br>
+                  Só adicionar essas linhas no código.
+              </p>
             </div>
           </div>
-          <div class="container">
-		  
-		  <div class="row">
-          <div class="col-lg-12 text-center">
-             <h2 class="text-uppercase">Display</h2>
-             <p class="item-intro text-muted">Teste com display</p>
-          </div>
-        </div>
-        <div class="row">     
-          <div class="col-sm-6 mx-auto">
-		    <img class="img-fluid " src="img/portfolio/display.jpeg" alt="">
-				 <p>1° Teste: Dados do arduino Nano para o Display.</p>
-				<ul class="list-inline">
-					<li>Data:  21/03/2018</li>					
-					<li>Categoria: Relógio</li>
-				 </ul>				 
-          </div>
-		  <div class="col-sm-6 mx-auto">
-		    <img class="img-fluid " src="img/portfolio/IMG_20180511_154714133_HDR.jpg" alt="">
-				 <p>2° Teste envolvendo transmissão de dados para o módulo Wifi.</p>
-				<ul class="list-inline">
-					<li>Data:  18/05/2018</li>					
-					<li>Categoria: Relógio</li>
-				</ul>				 
-          </div>
-        </div>
-            <div class="row">			
-              <div class="col-lg-8 mx-auto">
-			 
-                <div class="modal-body">
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <ul class="list-inline">
+                <li>Data: 21/03/2018</li>
+                <li>Categoria: Relógio</li>
+              </ul>
+              <div class="modal-body">
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
                     Fechar</button>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Modal 6 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Vídeos</h2>
+                <p class="item-intro text-muted">Vídeos de teste da Galton Board, com diferentes tamanhos de bolas.</p>
+                <video width="520" height="440" controls style="margin-top: 50px;">
+                  <source src="video/video1.mp4" type="video/mp4">
+                </video>
+                <p>Vídeo 1 - Bolas Amarelas - 3mm de diâmetro</p>
+                <video width="520" height="440" controls style="margin-top: 50px;">
+                  <source src="video/video2.mp4" type="video/mp4">
+                </video>
+                <p>Vídeo 2 - Bolas Brancas - 6mm de diâmetro</p>
+                <video width="520" height="440" controls style="margin-top: 50px;">
+                  <source src="video/video3.mp4" type="video/mp4">
+                </video>
+                <p>Vídeo 3 - Bolas Rosas - 8mm de diâmetro</p>
+                <video width="520" height="440" controls style="margin-top: 50px;">
+                  <source src="video/video4.mp4" type="video/mp4">
+                </video>
+                <p>Vídeo 4 - Bolas Verdes - 10mm de diâmetro</p>
+                </br>
+                <button class="btn btn-primary" data-dismiss="modal" type="button" style="margin-top: 50px;">
+                    <i class="fa fa-times"></i>
+                    Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 7 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="text-uppercase">Protótipo em papelão</h2>
+              <p class="item-intro text-muted">Desenhos do Tabuleiro</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 mx-auto">
+              <img class="img-fluid " src="img/portfolio/prot_01.jpg" alt="">
+            </div>
+            <div class="col-sm-4 mx-auto">
+              <img class="img-fluid " src="img/portfolio/prot_03.jpg" alt="">
+
+            </div>
+            <div class="col-sm-4 mx-auto">
+              <img class="img-fluid " src="img/portfolio/prot_04.jpg" alt="">
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <ul class="list-inline">
+                <li>Data: 23/05/2018</li>
+                <li>Categoria: Galton</li>
+              </ul>
+              <div class="modal-body">
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                        <i class="fa fa-times"></i>
+                        Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 8 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -813,31 +1179,68 @@
           </div>
           <div class="container">
             <div class="row">
+              <div class="col-lg-12 text-center">
+                <h2 class="text-uppercase">Placa NodeMCU ESP8622</h2>
+                <p class="item-intro text-muted">Teste com sensor, display e Node</p>
+              </div>
+              
+            </div>
+            <div class="row">
+              <div class="col-sm-4 mx-auto">
+                <img class="img-fluid " src="img/portfolio/sensor_01.png" alt="">
+                Este sensor foi desenvolvido para verificar a frequência cardíaca combinado um sensor óptico com amplificador, que envia o sinal analógico para o microcontrolador (Arduino, PIC, AVR etc),
+                 processar as informações para aplicações diversas. Se trata de um produto compacto, de excelente desempenho e fácil utilização.
+                <br>
+                <img class="img-fluid " src="img/portfolio/sensor_02.png" alt="">
+                  <br><b>Descrição Técnica:</b>
+                  <br>Alimentação 3,3V ou 5V;
+                  <br>Ligação:
+                  <br>S = Sinal+
+                  <br>Vcc = (3,3V ou 5V)
+                  <br>Sinal - = GND.
+                </p>
+              </div>
+              <div class="col-sm-4 mx-auto">
+                <img class="img-fluid " src="img/portfolio/IMG_20180606_110223726.jpg" alt="">
+                  <b>Montando o circuito:</b>
+                  <br><b>NodeMCU para display:</b>
+                  <br>3V3 ------ UCC
+                  <br>GND ------ GND
+                  <br>D2  ------ SDA
+                  <br>D1  ------ SCL
+                  <br><b>NodeMCU para SENSOR:</b>
+                  <br>A0 ------ S
+                  <br>GND ------ GND
+                  <br>3V3  ------ VCC
+                </p>
+              </div>
+              <div class="col-sm-4 mx-auto">
+                <img class="img-fluid " src="img/about/sucesso_wifi.png" alt="">
+                <p>
+                  <b>Imprimindo a conexão com Wifi do poalab</b>
+                  <br>
+                  Neste teste usamos o Cayenne IoT para MQTT.
+                  Importamos a biblioteca CayenneMQTT, usamos o ssid e wifi do poalab e autenticação do Cayene, que é gerada na hora que é selecionada a placa.
+                  Neste exemplo a resposta da conexão deu falha porque a porta 1883 é bloqueada.
+                </p>
+               <!-- <img class="img-fluid " src="img/portfolio/codigo_uno_05.png" alt="">-->
+                <p>
+                  <b>Teste com Wifi da Vivi</b>
+                  <br>
+                    Neste teste já temos a resposta positiva, pois não existe bloqueio da internet.
+                </p>
+              </div>
+            </div>
+            <div class="row">
               <div class="col-lg-8 mx-auto">
+                <ul class="list-inline">
+                  <li>Data: 09/06/2018</li>
+                  <li>Categoria: Relógio</li>
+                </ul>
                 <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Vídeos</h2>
-                  <p class="item-intro text-muted">Vídeos de teste da Galton Board, com diferentes tamanhos de bolas.</p>
-				  <video width="520" height="440" controls style="margin-top: 50px;">
-					  <source src="video/video1.mp4" type="video/mp4">
-				  </video>
-				  <p>Vídeo 1 - Bolas Amarelas</p>
-				  <video width="520" height="440" controls style="margin-top: 50px;">
-					  <source src="video/video2.mp4" type="video/mp4">
-				  </video>
-				  <p>Vídeo 2 - Bolas Brancas</p>
-				  <video width="520" height="440" controls style="margin-top: 50px;">
-					  <source src="video/video3.mp4" type="video/mp4">
-				  </video>
-				  <p>Vídeo 3 - Bolas Rosas</p>
-				  <video width="520" height="440" controls style="margin-top: 50px;">
-					  <source src="video/video4.mp4" type="video/mp4">
-				  </video>
-				  <p>Vídeo 4 - Bolas Verdes</p>
-				  </br>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button" style="margin-top: 50px;">
-                    <i class="fa fa-times"></i>
-                    Fechar</button>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                      <i class="fa fa-times"></i>
+                      Fechar</button>
                 </div>
               </div>
             </div>
@@ -846,20 +1249,20 @@
       </div>
     </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+  <!-- Contact form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/agency.min.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/agency.min.js"></script>
 
-  </body>
+</body>
 
 </html>
