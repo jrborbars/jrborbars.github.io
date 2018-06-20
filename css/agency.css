@@ -168,12 +168,13 @@ header.masthead {
   text-align: center;
   color: white;
  /* background-image: url("../img/header-bg.jpg");*/
-  /*background-image: url("../img/projeto/photo_2018-04-11_14-57-46.jpg");*/
-  background-color: #000000;
+ background-image: url("../img/team/foto_geral.jpeg");
+  /*background-color: #000000;*/
   background-color: black;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center center;
+
+  background-position: bottom center ;
   -webkit-background-size: auto;
   -moz-background-size: auto;
   -o-background-size: auto;
